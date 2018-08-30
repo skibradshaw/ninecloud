@@ -30,8 +30,8 @@
                         <tbody>
                             @forelse($clients as $c)
                             <tr>
-                                <td>{{$c->name}}</td>
-                                <td><i class="fas fa-excel" aria-hidden="true"></i>{{$c->review_spreadsheet or ''}} </td>
+                                <td nowrap="nowrap">{{$c->name}}</td>
+                                <td>{{$c->review_spreadsheet or ''}}</td>
                                 <td>{{$c->review_report or ''}}</td>
                             </tr>
                             @empty
