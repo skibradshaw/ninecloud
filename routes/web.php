@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Auth::routes();
+
+    /*
+    |------------------------------------
+    | Login Required Routes 
+    |------------------------------------
+     */
+    Route::group(['middleware' => 'auth'], function () {
+		
+		Route::get('/', 'HomeController@index');    	
+    
+
+    });
