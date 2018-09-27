@@ -20,7 +20,7 @@ class CreateReviewChecksTable extends Migration
             $table->integer('review_count');
             $table->float('current_rating', 53, 0)->nullable();
             $table->integer('current_rank')->nullable();
-            $table->integer('total_ranked')->nullable();
+            $table->integer('ranking_out_of')->nullable();
             $table->timestamps();
         });
     }

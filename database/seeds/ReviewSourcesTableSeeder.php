@@ -125,6 +125,25 @@ ReviewSource::create(['client_id' => Client::where('name','Budget Glacier')->fir
 ReviewSource::create(['client_id' => Client::where('name','Clear Creek Group')->first()->id, 'source_name' => 'Facebook','url' => 'https://www.yelp.com/biz/the-clear-creek-group-jackson']);
 ReviewSource::create(['client_id' => Client::where('name','Wyoming Guide Company')->first()->id, 'source_name' => 'Facebook','url' => 'https://www.yelp.com/biz/the-wyoming-guide-company-jackson']);
 
+		$clients = Client::all();
+        foreach($clients as $c)
+        {
+            
+            $taSource = $c->sources()->where('source_name','Trip Advisor')->first();
+
+            if(!empty($taSource))
+            {
+                $url = $taSource->url;
+                $parts = parse_url($url);
+                // dd($parts);
+                // parse_str($parts['path'], $query);
+                preg_match('~-d(.*?)-~', $parts['path'], $result);
+                // echo $result[1] . "<br>";  
+                $taSource->source_identifier = $result[1];
+                $taSource->save();       
+                // $data->put($c->name,$repo->getLocationData($taSource->source_identifier));           
+            }    
+        }
 
     }
 }
