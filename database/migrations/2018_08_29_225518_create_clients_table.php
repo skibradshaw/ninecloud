@@ -21,6 +21,7 @@ class CreateClientsTable extends Migration
             $table->text('url')->nullable();
             $table->text('review_spreadsheet')->nullable();
             $table->text('review_report')->nullable();
+            $table->tinyInteger('active')->default(1);
             $table->timestamps();
         });
     }

@@ -12,4 +12,11 @@ class Client extends Model
     {
     	return $this->hasMany(\App\ReviewSource::class);
     }
+
+    // Local Scopes
+    public function scopeActive($query)
+    {
+    	return $query->where('active',1);
+    }
+
 }
