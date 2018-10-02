@@ -24,7 +24,7 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Review Spreadsheet</th>
-                                <th>Last Review Check</th>
+                                <th>Last Automated Review Check</th>
                             </tr>
                         </thead>
                         <tbody>
