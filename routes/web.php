@@ -23,7 +23,8 @@ Auth::routes();
     Route::group(['middleware' => 'auth'], function () {
 		
 		Route::get('/', 'HomeController@index');    
-		Route::get('/test','HomeController@test');	
+		// Route::get('/test','HomeController@test');
+        // Route::get('/sheets','HomeController@sheets');	
     
 
     });

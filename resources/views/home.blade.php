@@ -24,15 +24,17 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Review Spreadsheet</th>
-                                <th>Review Report</th>
+                                <th>Last Review Check</th>
                             </tr>
                         </thead>
                         <tbody>
                             @forelse($clients as $c)
                             <tr>
                                 <td nowrap="nowrap">{{$c->name}}</td>
-                                <td>{{$c->review_spreadsheet or ''}}</td>
-                                <td>{{$c->review_report or ''}}</td>
+                                <td>{{$c->review_sheet_id}}</td>
+                                <td>
+
+                                    {{ !empty($c->getLatestReviewCheck()) ? $c->getLatestReviewCheck()->check_date->toFormattedDateString() : null }}</td>
                             </tr>
                             @empty
                             @endforelse

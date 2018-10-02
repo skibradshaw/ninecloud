@@ -27,6 +27,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+        $schedule->command('ninecloud:tareviewcheck')->weeklyOn(1, '2:00');
     }
 
     /**

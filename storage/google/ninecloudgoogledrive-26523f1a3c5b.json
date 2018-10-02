@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "nine-cloud-brain",
+  "private_key_id": "26523f1a3c5b47a804ec6f431efd138a8dd4efc9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC3cY8ALrVNYNXy\nmwNq1IoEkqMx8wbdnFoTDxlBiDVxtkJOSXqCI6cNCzx/Unt8dO611gTjWfsEAPvt\nlQ+loMqRK9S4hqFOX6HPDK/RMQ0s7LCP4hWZa+hVIBxUm4yhgIwQdGWpJ6ts26vy\nP0oRmx70uJFsXWX7zpK+PkD44O6vKedFRNRoEN3xRmof3TsTJ4JcoRI1LXuSJSGU\nto1rsYIahCb5rsb4/cr6QVEUYFfHpKBmaNJRE6NcEzTc+j0z7jY9hPbjYPHzO7Ef\nSlh9L9gXTP0aaz6L2OxLB7hhgvAvp8hrK11rxtTTjvuxCojEATgRm/AfIGIPAhGo\nMjYYYJSvAgMBAAECggEAUnk/IgVd5L6DIfI4bJjGvnyQ232YWh0X0BbLM4/B+3BG\nSj0103mk+rPRDKswMom94smoY/DJ7ohku3F3We86816h4h5BOmO7c0OQbjwf4NE/\nJkkujc4aY98ubYmLhfatwh4asJzRsPzoRt7Wdajol3y9gNtS5Q2AIwEJI/u4w84P\nEMjSkYajGqwrj9J7O16r5P8OnE2peDLTivp3n8Wd27cON6h2Qb1+D65dLwNn7gQy\noiOq0dFGIQepE9bhjqny+KXfgybjC3b28hxBy3VYaDDf1P9+RvUUaOAhA89S9bjj\nOcYr0CBcUHDOcskLYrUWMiA2/t88Qu/xNQfQkQkV1QKBgQDrdx37L+BwSooc7CU/\nfn0rXEdJuv9PpMBcXRbWVZMsxTjYi1mxc/T75rAw7bV7CuztC7fdSE/pSOSY+bq3\nwLnm++KbiFTLflOHNqrTKD6olXSVkRN6vPeuS2QjWN/O2p+RAFNG1L8Fta1yfjuN\nqbY2AJe0dm0f/3JfDa/xiHQqdQKBgQDHcQe8jsWYKB8DVmTP9jhGpNp2STf+7mLJ\njfOzb2hFSp3pgSHuhRoMZvNIwegy24RVVpisYtmCWnsoR5CkQj650I9iYUlgNbu5\nJBkTtz3hIygOKyLDW1RVosXAFdzGiandcWi6XTdbYUaqcIf4Cs1BzYnnQkdzcbv/\nqVFt6oH2EwKBgArBzFrXWxeGMD0WBLWb37gFZTRXGKbYzfjqP8rW6fxXnjs2Uoiq\n1XxUk6QImAvg+eXybRns3cm4jMj4T7FpWpTU2Qtl9Qm+4a4Br1gqNIKbIVJb6Fnp\nHB+YTiDXRJI8pqGHNEa+HWPzYtMiNTJJmItrB4M1DdMyZlU1WN5d74CpAoGAeJMA\nD2HtWajf3v+rIQMFUMg3fw2S+d+a/6l/LPrsef+7akD0h6QWdGsFJ/Z678xAu+sH\nkCiOwTz8egSSEIwwKdxJ4ztXxf+WRz7onj/I/ERp4e74LE0ZtlAa558QA0OU21jF\n7O2QGwG7XC1+Nlopb1/YwGQUmFmpQ85UeXQuL9sCgYEAtHEkK9PeSv2NNj3mZLyb\nQwYAV9anJGFhqy30e1POGxiLu9vq+l2nN0hXm58Udp7gOTmXECOHV1pn6hdJ7qTD\nTlquB25MoaQpVMt/SmRj5jipPilgD/uGKi7yE3Xnx7cVudckitynrw1GZfSeGvJu\n4nfwtp8RtPqjhSJ4lOXLMaI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "id-cloudserviceacount@nine-cloud-brain.iam.gserviceaccount.com",
+  "client_id": "117991648565691443966",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/id-cloudserviceacount%40nine-cloud-brain.iam.gserviceaccount.com"
+}

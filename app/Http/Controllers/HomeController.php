@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Client;
 use App\Repositories\TripAdvisorRepository;
 use Illuminate\Http\Request;
+use PulkitJalan\Google\Facades\Google;
+use Revolution\Google\Sheets\Facades\Sheets;
 
 class HomeController extends Controller
 {
@@ -29,6 +31,14 @@ class HomeController extends Controller
         return view('home',[
             'clients' => $clients,
         ]);
+    }
+
+    public function sheets()
+    {
+        Sheets::setService(Google::make('sheets'));
+        $sheet = Sheets::spreadsheet('1Anm8GOvRo0RjbbSsatI1qhsy7zq1rzvowYUpqkIh1lI')->sheet('Trip Advisor');
+
+        return $sheet->all();
     }
 
     public function test()

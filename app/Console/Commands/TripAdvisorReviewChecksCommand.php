@@ -47,24 +47,10 @@ class TripAdvisorReviewChecksCommand extends Command
         $data = collect();
         foreach($clients as $c)
         {
-            
-            $taSource = $c->sources()->where('source_name','Trip Advisor')->first();
-
-            if(!empty($taSource))
-            {
-                $url = $taSource->url;
-                $parts = parse_url($url);
-                // dd($parts);
-                // parse_str($parts['path'], $query);
-                preg_match('~-d(.*?)-~', $parts['path'], $result);
-                // echo $result[1] . "<br>";  
-                $taSource->source_identifier = $result[1];
-                $taSource->save();       
-                // $data->put($c->name,$repo->getLocationData($taSource->source_identifier));           
-            }
-            $data->put($c->name,$repo->reviewCheck($c));
-    
+            $reviewCheck = $repo->reviewCheck($c);
+            $response = $repo->appendSheet($c,$reviewCheck);
+            $this->info($c->name . ": " . $response);
         }
-        return $data;        
+            
     }
 }
