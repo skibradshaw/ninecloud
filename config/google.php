@@ -53,7 +53,7 @@ return [
         /*
         | Path to service account json file
         */
-        'file' => storage_path('google/ninecloudgoogledrive-26523f1a3c5b.json')
+        'file' => storage_path('google/ninecloud-62adedab2405.json')
     ],
 
     /*
