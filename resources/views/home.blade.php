@@ -34,7 +34,7 @@
                                 <td>{{$c->review_sheet_id}}</td>
                                 <td>
 
-                                    {{ !empty($c->getLatestReviewCheck()) ? $c->getLatestReviewCheck()->check_date->toFormattedDateString() : null }}</td>
+                                    {!! !empty($c->getLatestReviewCheck()) ? $c->getLatestReviewCheck()->check_date->toFormattedDateString() : '<span class="text-danger">Unchecked</span>' !!}</td>
                             </tr>
                             @empty
                             @endforelse
