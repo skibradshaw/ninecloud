@@ -31,7 +31,7 @@
                             @forelse($clients as $c)
                             <tr>
                                 <td nowrap="nowrap">{{$c->name}}</td>
-                                <td>{{$c->review_sheet_id}}</td>
+                                <td><a href="{{$c->review_spreadsheet}}" target="_blank">{{$c->review_sheet_id}}</a></td>
                                 <td>
 
                                     {!! !empty($c->getLatestReviewCheck()) ? $c->getLatestReviewCheck()->check_date->toFormattedDateString() : '<span class="text-danger">Unchecked</span>' !!}</td>
