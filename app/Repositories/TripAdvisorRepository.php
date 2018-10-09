@@ -83,7 +83,7 @@ class TripAdvisorRepository {
 	 */
 	public function appendSheet(Client $client, ReviewCheck $reviewCheck)
 	{
-		$prevReviewCheck = ReviewCheck::where('source_id',$reviewCheck->source_id)->where('check_date','<',$reviewCheck->source_id)->orderBy('check_date','desc')->first();
+		$prevReviewCheck = ReviewCheck::where('source_id',$reviewCheck->source_id)->where('check_date','<',$reviewCheck->check_date)->orderBy('check_date','desc')->first();
 		if(!empty($prevReviewCheck))
 		{
 			$newReviews = $reviewCheck->review_count-$prevReviewCheck->review_count;
@@ -108,7 +108,8 @@ class TripAdvisorRepository {
 				"",
 				$reviewCheck->source->url,
 				]
-	        ]);
+	        ],'USER_ENTERED');
+	        // dd($sheet->range('')->all());
 	        return 'Success!';
 		} catch (\Exception $e){
 			return $e->getMessage();
