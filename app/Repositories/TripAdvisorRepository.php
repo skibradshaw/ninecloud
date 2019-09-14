@@ -91,7 +91,7 @@ class TripAdvisorRepository {
 			$newReviews = 0;
 		}
 
-		try {
+		// try {
 			Sheets::setService(Google::make('sheets'));
 	        $sheet = Sheets::spreadsheet($client->review_sheet_id)->sheet('Trip Advisor');
 	        $sheet->append([
@@ -111,9 +111,9 @@ class TripAdvisorRepository {
 	        ],'USER_ENTERED');
 	        // dd($sheet->range('')->all());
 	        return 'Success!';
-		} catch (\Exception $e){
-			return $e->getMessage();
-		}
+		// } catch (\Exception $e){
+		// 	return $e->getMessage();
+		// }
 
 	}
 
