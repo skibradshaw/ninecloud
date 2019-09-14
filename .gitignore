@@ -13,3 +13,5 @@ npm-debug.log
 yarn-error.log
 .env
 .phpunit.result.cache
+ninecloud.sublime-project
+ninecloud.sublime-workspace
